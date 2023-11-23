@@ -1,5 +1,7 @@
 # tabby
 
+![Design doc](https://github.com/tomdoesdev/tabby/blob/master/design.png?raw=true)
+
 See [Vite Configuration Reference](https://vitejs.dev/config/).
 
 ## Project Setup
