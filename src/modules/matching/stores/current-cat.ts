@@ -1,6 +1,6 @@
 import { defineStore } from 'pinia'
 import { ref } from 'vue'
-import { BaseUrl } from '@/constants'
+import { BaseUrl } from '@/modules/matching/constants'
 
 export const useCurrentCatStore = defineStore('currentCat', () => {
   const id = ref('')

@@ -2,7 +2,7 @@
   <div>
     <div
       :class="{ 'animate-pulse': store.isImageLoading, 'bg-gray-300': store.isImageLoading }"
-      class="h-96 w-96"
+      class="h-96 w-96 flex justify-center"
     >
       <img
         :src="store.imageUrl"
@@ -35,8 +35,8 @@
 <script setup lang="ts">
 import axios from 'axios'
 import { onMounted, } from 'vue'
-import { useCurrentCatStore } from '@/stores'
-import { BaseUrl } from '@/constants'
+import { useCurrentCatStore } from '@/modules/matching/stores/current-cat'
+import { BaseUrl } from '@/modules/matching/constants'
 
 const handleImageLoaded = () => {
   store.setImageLoading(false)
